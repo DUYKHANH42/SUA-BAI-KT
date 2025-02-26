@@ -28,10 +28,19 @@ namespace SUA_BAI_KT
                 if (loaigv == 1)
                 {
                     gv = new GiangVienCH();
+                    //foreach (GiangVien Gv in dsGiangVien)
+                    //{
+                    //    if (Gv.Maso == gv.Maso)
+                    //    {
+                    //        Console.WriteLine("Mã Số Giảng Viên Đã Tồn Tại");
+                    //        return;
+                    //    }
+                    //}
                 }
                 else if (loaigv == 2)
                 {
                     gv = new GiangVienTG();
+
                 }
                 else
                 {
@@ -40,6 +49,8 @@ namespace SUA_BAI_KT
                 }
                 gv.Nhap();
                 dsGiangVien.Add(gv);
+
+                Console.WriteLine("Them Thanh Cong.");
                 Console.Write("Ban co muon nhap tiep khong? (Y/N): ");
                 chon = Console.ReadLine();
 
@@ -52,7 +63,7 @@ namespace SUA_BAI_KT
             {
                 tong += gv.TinhLuong();
             }
-            Console.WriteLine($"Tong luong cua tat ca giang vien la: {tong.ToString("#,0.0")} VND ");
+            Console.WriteLine($"Tong luong cua tat ca giang vien la: {tong.ToString("#,0")} VND ");
         }
         public void XoaGV()
         {
@@ -77,7 +88,7 @@ namespace SUA_BAI_KT
             {
 
                 Console.WriteLine("{0,-20}{1,-15}{2,15}{3,15}"
-              , gv.Maso, gv.Hoten, gv.Namsinh, gv.TinhLuong().ToString("#,0.0"));
+              , gv.Maso, gv.Hoten, gv.Namsinh, gv.TinhLuong().ToString("#,0"));
             }
         }
 

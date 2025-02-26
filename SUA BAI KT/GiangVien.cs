@@ -39,8 +39,7 @@ namespace SUA_BAI_KT
             set { namsinh = value; }
         }
         public virtual void Nhap()
-        {
-            
+        { 
             Console.Write("Nhap ma so: ");
             maso = Console.ReadLine();
             Console.Write("Nhap ho ten: ");
@@ -52,11 +51,6 @@ namespace SUA_BAI_KT
         {
             return 0;
         }
-        public virtual void Xuat()
-        {
-            Console.WriteLine("Ma so: " + maso);
-            Console.WriteLine("Ho ten: " + hoten);
-            Console.WriteLine("Nam sinh: " + namsinh);
-        }
+        
     }
 }

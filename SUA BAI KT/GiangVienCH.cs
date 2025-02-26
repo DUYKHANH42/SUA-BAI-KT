@@ -32,11 +32,6 @@ namespace SUA_BAI_KT
         {
             return hesoluong* 23400000;
         }
-        public override void Xuat()
-        {
-            base.Xuat();
-            Console.WriteLine("He so luong: " + hesoluong);
-            Console.WriteLine("Luong: " + TinhLuong());
-        }
+       
     }
 }

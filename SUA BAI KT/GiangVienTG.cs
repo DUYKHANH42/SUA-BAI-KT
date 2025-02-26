@@ -32,11 +32,6 @@ namespace SUA_BAI_KT
         {
             return sotietday * 120000;
         }
-        public override void Xuat()
-        {
-            base.Xuat();
-            Console.WriteLine("So tiet day: " + sotietday);
-            Console.WriteLine("Luong: " + TinhLuong());
-        }
+        
     }
 }
